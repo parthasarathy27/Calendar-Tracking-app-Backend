@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Cache
+.cache/
+dist/
+
+# IDE config
+.vscode/
+.idea/
+.DS_Store
