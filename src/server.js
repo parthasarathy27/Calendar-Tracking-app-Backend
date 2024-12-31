@@ -3,7 +3,7 @@ import dotenv from 'dotenv'; // Import dotenv for environment variables
 
 dotenv.config(); // Load environment variables from .env file (only for local development)
 
-const port = process.env.PORT || 5000; // Use the PORT provided by Vercel
+const port = process.env.PORT || 8080; // Use the PORT provided by Vercel
 
 // Start the server
 app.listen(port, () => {
