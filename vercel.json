@@ -2,14 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.js",
+      "src": "src/server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "dest": "/src/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/server.js"
     }
-  ]
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://gopalsarathyvanitha:26mvRbG2Tzg26MWp@cluster-calender.7pkex.mongodb.net/your-database-name?retryWrites=true&w=majority",
+    "PORT": "8080"
+  }
 }
